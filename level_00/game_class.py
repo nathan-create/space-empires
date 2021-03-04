@@ -59,7 +59,7 @@ class Game:
                 if p.player_number == player:
                     move = p.choose_translation(self.game_state, choices)
 
-            self.game_state['players'][player]['scout_coords'] = (initial_coordinates[0] + move[0], initial_coordinates[1] + move[1])
+            self.game_state['players'][player]['scout_coords'] = (init_coords[0] + move[0], init_coords[1] + move[1])
         self.game_state['turn'] += 1
         p1 = self.game_state['players'][1]
         p2 = self.game_state['players'][2]

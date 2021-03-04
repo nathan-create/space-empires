@@ -52,8 +52,8 @@ class CustomPlayer():
 
         for choice in choices:
             updated_coords = (my_scout_coords[0] + choice[0], my_scout_coords[1] + choice[1])
-            if dist(updated_coords, opponent_home_colony_coords) < smallest_distance:
+            if dist(updated_coords, opponent_home_colony_coords) < smallest_dist:
                 closest_choice = choice
-                smallest_distance = dist(updated_coords, opponent_home_colony_coords)
+                smallest_dist = dist(updated_coords, opponent_home_colony_coords)
 
         return closest_choice
