@@ -24,5 +24,3 @@ for _ in range(200):
     winner = game.state['winner']
     num_wins[winner] += 1
 print(num_wins)
-if abs(num_wins[1] - num_wins[2]) > 40:
-    print("there is a problem")
