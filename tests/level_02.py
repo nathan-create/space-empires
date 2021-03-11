@@ -3,25 +3,18 @@ sys.path.append('level_02')
 from game_class import *
 from player_class import *
 
-tests = [
-    {'seed': 0, 'winner': 2},
-    {'seed': 1, 'winner': 1},
-    {'seed': 2, 'winner': 2},
-    {'seed': 3, 'winner': 1},
-    {'seed': 4, 'winner': 1},
-    {'seed': 5, 'winner': 2},
-    {'seed': 6, 'winner': 2},
-    {'seed': 7, 'winner': 1},
-    {'seed': 8, 'winner': 1},
-    {'seed': 9, 'winner': 1}
-]
-for test in tests:
+num_wins = {1: 0, 2: 0}
+scouts_remaining = {1: 0, 2: 0}
+for _ in range(200):
     players = [CustomPlayer(), CustomPlayer()]
-    random_seed = test['seed']
-
-    game = Game(players, random_seed)
+    game = Game(players)
     game.run_to_completion()
+    winner = game.state['winner']
+    scouts_remaining[winner] += len(game.state['players'][winner]['scout_coords'])
 
-    desired_winner = test['winner']
-    assert(game.state['winner'] == desired_winner)
+    num_wins[winner] += 1
+avg_scouts_remaining = {k:v/200 for k,v in scouts_remaining.items()}
+
+assert abs(num_wins[1] - num_wins[2]) <= 40
+assert abs(avg_scouts_remaining[1] - avg_scouts_remaining[2]) <= 0.5
 print("Passed")
