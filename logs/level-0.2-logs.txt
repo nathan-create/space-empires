@@ -1,0 +1,87 @@
+
+BEGINNING OF TURN 1 MOVEMENT PHASE
+
+	Player 1 Scout 1: (4, 1) -> (4, 2)
+	Player 1 Scout 2: (4, 1) -> (4, 2)
+	Player 1 Scout 3: (4, 1) -> (4, 2)
+	Player 2 Scout 1: (4, 7) -> (4, 6)
+	Player 2 Scout 2: (4, 7) -> (4, 6)
+	Player 2 Scout 3: (4, 7) -> (4, 6)
+
+END OF TURN 1 MOVEMENT PHASE
+----------------------------------------
+BEGINNING OF TURN 2 COMBAT PHASE
+
+END OF TURN 2 COMBAT PHASE
+----------------------------------------
+BEGINNING OF TURN 2 MOVEMENT PHASE
+
+	Player 1 Scout 1: (4, 2) -> (4, 3)
+	Player 1 Scout 2: (4, 2) -> (4, 3)
+	Player 1 Scout 3: (4, 2) -> (4, 3)
+	Player 2 Scout 1: (4, 6) -> (4, 5)
+	Player 2 Scout 2: (4, 6) -> (4, 5)
+	Player 2 Scout 3: (4, 6) -> (4, 5)
+
+END OF TURN 2 MOVEMENT PHASE
+----------------------------------------
+BEGINNING OF TURN 3 COMBAT PHASE
+
+END OF TURN 3 COMBAT PHASE
+----------------------------------------
+BEGINNING OF TURN 3 MOVEMENT PHASE
+
+	Player 1 Scout 1: (4, 3) -> (4, 4)
+	Player 1 Scout 2: (4, 3) -> (4, 4)
+	Player 1 Scout 3: (4, 3) -> (4, 4)
+	Player 2 Scout 1: (4, 5) -> (4, 4)
+	Player 2 Scout 2: (4, 5) -> (4, 4)
+	Player 2 Scout 3: (4, 5) -> (4, 4)
+
+END OF TURN 3 MOVEMENT PHASE
+----------------------------------------
+BEGINNING OF TURN 4 COMBAT PHASE
+
+	Combat at (4, 4):
+
+		Player 1 Scout 1 was destroyed
+		Player 2 Scout 3 was destroyed
+		Player 2 Scout 1 was destroyed
+		Player 2 Scout 2 was destroyed
+
+END OF TURN 4 COMBAT PHASE
+----------------------------------------
+BEGINNING OF TURN 4 MOVEMENT PHASE
+
+	Player 1 Scout 2: (4, 4) -> (4, 5)
+	Player 1 Scout 3: (4, 4) -> (4, 5)
+
+END OF TURN 4 MOVEMENT PHASE
+----------------------------------------
+BEGINNING OF TURN 5 COMBAT PHASE
+
+END OF TURN 5 COMBAT PHASE
+----------------------------------------
+BEGINNING OF TURN 5 MOVEMENT PHASE
+
+	Player 1 Scout 2: (4, 5) -> (4, 6)
+	Player 1 Scout 3: (4, 5) -> (4, 6)
+
+END OF TURN 5 MOVEMENT PHASE
+----------------------------------------
+BEGINNING OF TURN 6 COMBAT PHASE
+
+END OF TURN 6 COMBAT PHASE
+----------------------------------------
+BEGINNING OF TURN 6 MOVEMENT PHASE
+
+	Player 1 Scout 2: (4, 6) -> (4, 7)
+	Player 1 Scout 3: (4, 6) -> (4, 7)
+
+WINNER: PLAYER 1
+END OF TURN 6 MOVEMENT PHASE
+----------------------------------------
+BEGINNING OF TURN 7 COMBAT PHASE
+
+END OF TURN 7 COMBAT PHASE
+----------------------------------------
