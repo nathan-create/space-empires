@@ -72,19 +72,19 @@ class Game:
         for player_num in self.state['players']:
             p1 = self.state['players'][1]
             p2 = self.state['players'][2]
-            frozen_scouts = []
+            dead_scouts = []
             for scout1_num in p1['scout_coords']:
                 scout1 = p1['scout_coords'][scout1_num]
                 for scout2_num in p2['scout_coords']:
                     scout2 = p2['scout_coords'][scout2_num]
-                    if scout1 == scout2 and (1,scout1_num) not in frozen_scouts:
-                        frozen_scouts.append((1,scout1_num))
-                    if scout1 == scout2 and (2,scout2_num) not in frozen_scouts:
-                        frozen_scouts.append((2,scout2_num))
+                    if scout1 == scout2 and (1,scout1_num) not in dead_scouts:
+                        dead_scouts.append((1,scout1_num))
+                    if scout1 == scout2 and (2,scout2_num) not in dead_scouts:
+                        dead_scouts.append((2,scout2_num))
             player_scouts = self.state['players'][player_num]['scout_coords']
             for scout_num in player_scouts:
                 scout = player_scouts[scout_num]
-                if (player_num,scout_num) not in frozen_scouts:
+                if (player_num,scout_num) not in dead_scouts:
                     choices = self.get_in_bounds_translations(scout)
                     player = self.players[player_num - 1]
                     move = player.choose_translation(self.state, choices, scout_num)
